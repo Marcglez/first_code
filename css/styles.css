@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
 }
 
 body {
@@ -12,9 +11,12 @@ body {
 /* Style the header */
 
 .header {
-    background-color: yellow;
-    padding: 20px;
+    background-image: url('../img/mesa\ de\ mezclas.jpeg');
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 10% 20px;
     text-align: center;
+    color: white;
 }
 
 .header h1 {
@@ -28,15 +30,28 @@ body {
 
 /* Create three equal columns that floats next to each other */
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     padding: 20px 20%;
 }
 
-.column h2 {
-    color: green;
+.one-column h1,
+.one-column h2 {
     text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+
+/*Two columnas*/
+
+.two-column {
+    float: left;
+    padding: 20px;
+    width: 50%;
 }
 
 
@@ -49,19 +64,19 @@ body {
 }
 
 
-/*Image Gallery*/
+/*Image three-column*/
 
-.gallery {
+.three-column {
     padding: 20px;
     float: left;
     width: 33.33%;
 }
 
-.gallery img {
+.three-column img {
     width: 100%;
 }
 
-.gallery .desc {
+.three-column .desc {
     padding: 15px;
     text-align: center;
 }
@@ -70,7 +85,7 @@ body {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:600px) {
-    .column {
+    column {
         width: 100%;
     }
 }
