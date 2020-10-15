@@ -64,6 +64,23 @@ body {
 }
 
 
+/*FOOTER */
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    background-color: #212529;
+    color: #868e96;
+    text-align: center;
+}
+
+
 /*Image three-column*/
 
 .three-column {
@@ -82,10 +99,19 @@ body {
 }
 
 
+/*Four-columns*/
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:600px) {
-    column {
+    .one-column {
         width: 100%;
     }
 }
